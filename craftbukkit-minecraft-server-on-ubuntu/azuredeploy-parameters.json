@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "newStorageAccountName": {
+            "value": "bukkitserver"
+        },
+        "adminUsername": {
+            "value": "rprakashg"
+        },
+        "dnsNameForPublicIP": {
+            "value": "craftbukkit1"
+        },
+        "location": {
+            "value": "West US"
+        },
+        "vmSize": {
+            "value": "Standard_D1"
+        },
+        "ubuntuOSVersion": {
+            "value": "14.04.2-LTS"
+        },
+        "minecraftUser": {
+            "value": "icrazeboy"
+        },
+        "difficulty": {
+            "value": "0"
+        },
+        "levelName": {
+            "value": "world"
+        },
+        "gameMode": {
+            "value": "0"
+        },
+        "whiteList": {
+            "value": "true"
+        },
+        "enableCommandBlock": {
+            "value": "true"
+        },
+        "maxPlayers": {
+            "value": 10
+        },
+        "allowFlight": {
+            "value": "false"
+        },
+        "spawnProtection": {
+            "value": 16
+        },
+        "spawnMonsters": {
+            "value": "true"
+        },
+        "generateStructures": { 
+            "value": "true"
+        },
+        "levelSeed": {
+            "value": " "
+        }
+    }
+}
