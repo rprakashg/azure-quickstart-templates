@@ -1,6 +1,6 @@
 # Install Craftbukkit minecraft server on ubuntu virtual machine using a custom script extension
 
-<a href="https://azuredeploy.net/" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Frprakashg%2Fazure-quickstart-templates%2Fmaster%2Fcraftbukkit-minecraft-server-on-ubuntu%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
@@ -21,8 +21,16 @@ Below are the parameters that the template expects
 
 | Name   | Description    |
 |:--- |:---|
-| siteName  | Name of the Web App. |
-| hostingPlanName  | Name for hosting plan  |
-| siteLocation  | Site Location   |
-| sku  | SKU ("Free", "Shared", "Basic", "Standard") |
-| workerSize | Worker Size( 0=Small, 1=Medium, 2=Large ) |
+| location | Location where the resources will be deployed |
+| minecraftUser | Your Minecraft user name |
+| adminUsername  | Username for the Virtual Machines  |
+| adminPassword  | Password for the Virtual Machine  |
+| dnsNameForPublicIP  | Unique DNS Name for the Public IP used to access the Virtual Machine. |
+| difficulty  | 0 - Peaceful, 1 - Easy, 2 - Normal, 3 - Hard |
+| level-name | Name of the Minecraft world which will be created |
+| gamemode | 0 - Survival, 1 - Creative, 2 - Adventure, 3 - Spectator |
+| white-list | Only ops and whitelisted players can connect when true |
+| enable-command-block | Allow command blocks to be created |
+| spawn-monsters | Enable monster spawning |
+| generate-structures | Generates villages, temples etc. |
+| level-seed | Add a seed for your world |

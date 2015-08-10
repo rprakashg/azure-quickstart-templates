@@ -329,7 +329,7 @@
                 "typeHandlerVersion": "1.2",
                 "settings": {
                         "fileUris": [
-                            "https://rprakashg.blob.core.windows.net/scripts/install.sh"
+                            "https://raw.githubusercontent.com/rprakashg/azure-quickstart-templates/master/craftbukkit-minecraft-server-on-ubuntu/install.sh"
                         ],
                         "commandToExecute": "[concat('sh install.sh ', parameters('minecraftUser'), ' ', parameters('difficulty'), ' ', parameters('levelName'), ' ', parameters('gameMode'), ' ', parameters('whiteList'), ' ', parameters('enableCommandBlock'), ' ', parameters('maxPlayers'), ' ', parameters('allowFlight'), ' ', parameters('spawnProtection'), ' ', parameters('spawnMonsters'), ' ', parameters('generateStructures'), ' ', parameters('levelSeed'))]"
                 }
