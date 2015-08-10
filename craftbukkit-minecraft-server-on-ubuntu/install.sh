@@ -58,7 +58,7 @@ done
 chown -R minecraftadmin /srv/bukkit-minecraft-server
 
 #Run buildtools
-java -jar BuildTools.jar --rev 1.8.8
+java -jar BuildTools.jar
 
 #clean up directory
 find . -maxdepth 1 -not -name "*.jar" -delete;
