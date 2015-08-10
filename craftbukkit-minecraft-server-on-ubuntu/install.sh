@@ -54,15 +54,14 @@ while ! echo y | wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSucces
 	wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar -O BuildTools.jar
 done
 
-#set permissions on install dir
-chown -R minecraftadmin /srv/bukkit-minecraft-server
-
 #Run buildtools
 java -jar BuildTools.jar
 
-
 #clean up directory
 find . -maxdepth 1 -not -name "*.jar" -delete;
+
+#set permissions on install dir
+chown -R minecraftadmin /srv/bukkit-minecraft-server
 
 mallocSize=1024m
 
