@@ -58,10 +58,8 @@ done
 chown -R minecraftadmin /srv/bukkit-minecraft-server
 
 #Run buildtools
-while ! echo y | java -jar BuildTools.jar --rev 1.8.8; do
-	sleep 10
-	java -jar BuildTools.jar --rev 1.8.8;
-done
+java -jar BuildTools.jar
+
 
 #clean up directory
 find . -maxdepth 1 -not -name "*.jar" -delete;
